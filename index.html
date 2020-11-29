@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+/*< HERE STARTS THE STYLE FORMATTING OF YOUR PAGE*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-container-vert {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.flex-container-hor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex-item {
+  margin-left:10px;
+  margin-right:20px;
+  max-width: 250px;
+  background-color: ;
+  float: center;
+
+}
+
+.flex-item-body {
+  max-width:800px;
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
+
+body{
+  background: #e6f2ff; /*Pick your favourite color for your background here: https://www.w3schools.com/colors/colors_picker.asp?colorhex=FAEBD7*/
+}
+
+h1 {
+  font-family: Palatino, serif; /* Pick your favourite font family here: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+  font-size: 35px; /*Change font-size of your name at the top of the page here*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h2 {
+  font-family: Palatino, serif; /* Pick your favourite font family here: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+  font-size: 22px; /*Change font-size of headings like Contact, About Me, Research Interests,... here */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+  
+h4 {
+  font-family: Palatino, serif; /* Pick your favourite font family here: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+  font-size: 20px; /*Change size of subheading (below your name at the top of the page) here*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 15.4px;
+}
+p {
+  font-family: Palatino, serif; /* Pick your favourite font family here: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+  font-size: 15px; /*Change font-size of paragraphs here*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 20px;
+
+}
+p.date { /* This defines the style format of the "last-update" date on top-right of the page*/
+  font-family: Consolas, monaco, monospace; /* Pick your favourite font family here: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+  float: right;
+  color: grey;
+  font-size: 14px;
+}
+p.email { /* This defines the style format of your email address (in blue) on the "Contact" section*/
+  font-family: Consolas, monaco, monospace;
+  float: left;
+  color: blue;
+  font-weight: 800;
+  font-size: 12px;
+}
+ul{
+  font-family: Palatino, serif; /* Pick your favourite font family here: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+  font-size: 15px; /*Change font-size of sentences in bullet lists here*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 15px;
+  padding: 1px;  
+  padding-left: 35px;
+}
+li {
+  margin-bottom: 12px;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+
+.horizontalLine {
+  border-top : 2px solid;
+  margin-right:10px;
+}
+
+.verticalLine {
+  border-left: 4px solid black;
+  top: 0;
+  bottom: 0;
+  margin-right: 10px;
+}
+.profile-image{ /* This defines the border surrounding your profile photo*/
+  border: 2px solid;
+}
+</style>
+<!-- HERE ENDS THE STYLE FORMATTING OF YOUR PAGE -->
+</head>
+
+<!-- HERE BEGINS THE CONTENT OF YOUR PAGE -->
+<body>
+<div class = "flex">
+  <div class="flex-container">
+    <div class="flex-item">
+
+    	<div class="flex-container-vert">
+        <div class="flex-item">
+          <img class="profile-image" src="pictures/profile.png" alt ="An image of me" style="float:left;width:200px;height:200px;">
+        </div> <!-- Add your own photo here. To do that, copy your photo "me.jpg" into the "pictures/" folder and then update the name accordingly in the src="..." field. Take care of writing the right extension: jpg, jpeg, JPG,..-->
+    		
+    		<div class="flex-item">
+    			<h2 >Contact</h2>
+            <p>IMDEA Software Institute<br/>
+               Office 342<br/>
+               Campus de Montegancedo s/n<br/>
+               28223 - Pozuelo de Alarcón<br/>
+               Madrid, Spain<br/><br/>
+               +34 91 101 2202 ext 4333<br/></p>
+            <p class="email">kyveli.doveri[at]imdea.org</p>   
+    		</div>
+    	</div>
+    </div>
+
+    <div class=verticalLine></div>
+
+    <div class="flex-container-vert">
+    
+      <div class="flex-item-body">
+        <p class="date">Last update: September, 2020</p>
+        <h1>Kyveli Doveri</h1>
+        <h4>PhD. student @ IMDEA Software Institute (Madrid)</h4>
+
+        <!--  ABOUT ME -->
+        <h2>About me</h2>
+        <div class="horizontalLine">
+          <p> Add info about what you are doing @ <a href="https://software.imdea.org/index.html">IMDEA Software Institute</a> uwho your supervisor is <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a>, what you did prior to joining IMDEA.</p>
+          <!-- To add a link to your CV replace the latter PDF name by the name of your CV and add the PDF to the folder containing this HMTL file -->
+          <p>This is another paragraph. You can also add a link to you <a href="CV202008.pdf">CV</a></p>
+        </div>
+
+        <!--  RESEARCH INTERESTS -->
+        <h2>My research interests</h2>
+         <div class="horizontalLine">
+          <div class="flex-container-hor">
+            <ul>
+              <li>Bla bla 1</li>
+              <li>Bla bla 2</li>
+            </ul>
+            <ul>
+               <li>Bla bla 3</li>
+              <li>Bla bla 4</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--  INTERNSHIPS -->
+        <h2>Internships</h2>
+        <div class="horizontalLine">
+          <ul >
+           <li><b>IMDEA Software Institute (Madrid)</b>. Under the supervision of Pierre Ganty. Summer of 2019..</li>
+           <li><b>Bla bla</b>. Under the supervision Bla. From Bla to Bla.</li>
+          </ul>
+        </div>
+
+        <!--  PUBLICATIONS -->
+        <h2>Publications</h2>
+        <div class="horizontalLine">
+          <ul>
+            <li>P. Ganty and K. Doveri . <b>My title </b>. VIC 2020. [<a href="https://arxiv.org/abs/null">arXiv</a>]</li>
+            <li>P. Ganty and K. Doveri . <b>My title </b>. VIC 2020. [<a href="https://arxiv.org/abs/null">arXiv</a>]</li>
+          </ul>    
+        </div>
+        
+        <!--  SOFTWARE PROJECTS (remove if you don't need this. REMOVE FROM HERE) -->
+        <h2>Software</h2>
+        <div class="horizontalLine">
+          <ul>
+            <li><b>My Project Name</b>. Brief description of the project. [<a href="https://github.com/null">Github project page</a>]</li></li>
+        </div>
+        <!-- REMOVE TO HERE -->
+
+        <!--  YOUR BACHELOR'S THESIS -->
+        <h2>Bachelor's thesis</h2>
+        <div class="horizontalLine">
+          <ul>
+            <li><b>Title of thesis</b>. Degree in Mathematics thesis, Bla Bla University, date. [<a href="yourPDF.pdf">PDF</a>]</li>
+          <ul>
+      </div>
+
+      <div class="horizontalLine"></div>
+        <p> Copyright © 2020 Kyveli Doveri</p>
+      </div>
+
+    </div>
+  </div>   
+</div>
+
+</body>
+</html>
