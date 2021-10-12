@@ -1,0 +1,143 @@
+body {
+    /* mainpage background */
+    background: #e6f2ff;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.container {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.right-col {
+  flex-flow: column;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+}
+
+.menu {
+  flex-basis: 20%;
+  /*background: lightblue;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-container-hor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.header {
+  flex: 0 0 10%;
+  /*background: lightgray;*/
+}
+
+.body {
+    flex: 0 0 80%;
+  /*background: purple;*/
+}
+
+.footer {
+  flex: 0 0% 10%;
+  /*background: lightgreen;*/
+}
+
+.flex-item {
+    margin-left:10px;
+    margin-right:20px;
+    max-width: 250px;
+}
+
+.profile-image {
+    border: 1px solid;
+}
+
+h1 {
+    font-family: Palatino, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+
+h2 {
+    font-family: Palatino, serif;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+p {
+    /*font-family: Palatino, serif;*/
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+b.bold {
+    font-weight: bold;
+}
+
+.paper {
+    display: block;
+    margin: 5px 0;
+}
+
+p.email {
+    font-family: Consolas, monaco, monospace;
+    float: left;
+    color: blue;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+ul {
+    /*font-family: Palatino, serif;*/
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 15px;
+    padding: 1px;
+    padding-left: 35px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+.horizontalLine {
+    border-top : 2px solid;
+    margin-right:10px;
+}
+
+.signature {
+    text-align: right;
+    padding-right: 10px;
+    color: #848484;
+    /*background-color: #c9ebf0;*/
+    line-height: 4px;
+    clear: both;
+    position: relative;
+    margin-top: auto;
+    font-size: 12px;
+}
